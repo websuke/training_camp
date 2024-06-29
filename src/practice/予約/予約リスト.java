@@ -1,7 +1,11 @@
-package practice;
+package practice.予約;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import practice.カテゴリ;
+import practice.書籍;
+import practice.蔵書;
 
 public class 予約リスト {
 	private static List<書籍> 予約リスト = new ArrayList<>();

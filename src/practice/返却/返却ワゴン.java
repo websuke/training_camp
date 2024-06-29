@@ -1,4 +1,6 @@
-package practice;
+package practice.返却;
+
+import practice.カテゴリ;
 
 public class 返却ワゴン {
 	private カテゴリ カテゴリ;
@@ -7,9 +9,9 @@ public class 返却ワゴン {
 		super();
 		this.カテゴリ = カテゴリ;
 	}
-	
+
 	public カテゴリ getカテゴリ() {
 		return this.カテゴリ;
 	}
-	
+
 }
