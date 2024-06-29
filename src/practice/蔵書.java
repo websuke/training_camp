@@ -23,8 +23,17 @@ public class 蔵書 {
 	public カテゴリ getカテゴリ() {
 		return this.書籍.getカテゴリ();
 	}
-	
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "蔵書{" +
+				"蔵書ID=" + 蔵書ID +
+				", 書籍=" + 書籍 +
+				", 状態=" + 状態 +
+				'}';
+	}
+
+	public practice.書籍 get書籍() {
+		return this.書籍;
+	}
 }

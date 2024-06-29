@@ -13,4 +13,12 @@ public class 書籍 {
 	public カテゴリ getカテゴリ() {
 		return this.カテゴリ;
 	}
+
+	@Override
+	public String toString() {
+		return "書籍{" +
+				"名前='" + 名前 + '\'' +
+				", カテゴリ=" + カテゴリ +
+				'}';
+	}
 }

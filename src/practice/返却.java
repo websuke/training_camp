@@ -11,10 +11,9 @@ public class 返却 {
 		
 		if(蔵書.is貸出中()) {
 			蔵書.set状態(状態.返却済);
-			return true;
 		}
-		
-		return false;
+
+		return isCorrect(蔵書, 返却ワゴン);
 	}
 	
 	private boolean isCorrect(蔵書 蔵書, 返却ワゴン 返却ワゴン) {
