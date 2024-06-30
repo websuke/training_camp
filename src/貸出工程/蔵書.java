@@ -6,8 +6,16 @@ public class 蔵書 {
     public 蔵書(String 名前) {
         this.名前 = 名前;
     }
+    
+    
 
-    @Override
+    public String 名前() {
+		return 名前;
+	}
+
+
+
+	@Override
     public String toString() {
         return "蔵書{" +
                 "名前='" + 名前 + '\'' +

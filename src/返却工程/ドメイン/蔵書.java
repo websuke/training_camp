@@ -20,9 +20,21 @@ public class 蔵書 {
 	public void set状態(蔵書状態 状態) {
 		this.状態 = 状態;
 	}
+	
+	public boolean 同じ蔵書(String 名前) {
+		return this.名前 == 名前;  
+	}
 
 	public boolean 同じカテゴリ(蔵書カテゴリ カテゴリ) {
 		return this.カテゴリ == カテゴリ;
+	}
+	
+	public 蔵書カテゴリ カテゴリ() {
+		return this.カテゴリ;
+	}
+	
+	public 蔵書状態 状態() {
+		return this.状態;
 	}
 
 	@Override

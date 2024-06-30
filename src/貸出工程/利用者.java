@@ -8,6 +8,10 @@ public class 利用者 {
 	public 利用者(String 利用者名) {
 		this.利用者名 = 利用者名;
 	}
+	
+	public String 利用者名() {
+		return this.利用者名;
+	}
 
 	@Override
 	public String toString() {
