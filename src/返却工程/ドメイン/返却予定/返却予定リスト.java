@@ -17,7 +17,7 @@ public class 返却予定リスト {
 		return 返却予定リスト.get(index).返却期限切れ();
 	}
 
-	public static void 返却する(int 蔵書ID) {
-		返却予定リスト.remove(蔵書ID);
+	public static void 返却する(蔵書 蔵書) {
+		返却予定リスト.remove(蔵書);
 	}
 }
