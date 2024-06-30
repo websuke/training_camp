@@ -1,4 +1,4 @@
-package 返却工程;
+package 返却工程.ドメイン;
 
 import java.util.Objects;
 

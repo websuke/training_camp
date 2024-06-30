@@ -1,7 +1,10 @@
 package 返却工程;
 
-import 返却工程.返却.返却;
-import 返却工程.返却.返却ワゴン;
+import 返却工程.ドメイン.蔵書;
+import 返却工程.ドメイン.蔵書カテゴリ;
+import 返却工程.ドメイン.蔵書状態;
+import 返却工程.ドメイン.返却.返却;
+import 返却工程.ドメイン.返却.返却ワゴン;
 
 public class Main {
 	public static void main(String[] args) {

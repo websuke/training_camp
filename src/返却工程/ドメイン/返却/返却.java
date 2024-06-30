@@ -1,9 +1,9 @@
-package 返却工程.返却;
+package 返却工程.ドメイン.返却;
 
-import 返却工程.蔵書;
-import 返却工程.蔵書状態;
-import 返却工程.予約.予約リスト;
-import 返却工程.貸出.貸出リスト;
+import 返却工程.ドメイン.蔵書;
+import 返却工程.ドメイン.蔵書状態;
+import 返却工程.ドメイン.予約.予約リスト;
+import 返却工程.ドメイン.貸出.貸出リスト;
 
 public class 返却 {
 

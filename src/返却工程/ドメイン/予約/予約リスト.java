@@ -1,11 +1,11 @@
-package 返却工程.予約;
+package 返却工程.ドメイン.予約;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import 返却工程.蔵書;
-import 返却工程.蔵書カテゴリ;
-import 返却工程.蔵書状態;
+import 返却工程.ドメイン.蔵書;
+import 返却工程.ドメイン.蔵書カテゴリ;
+import 返却工程.ドメイン.蔵書状態;
 
 public class 予約リスト {
 	private static List<蔵書> 予約リスト = new ArrayList<>();
