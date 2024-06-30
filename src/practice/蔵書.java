@@ -1,14 +1,20 @@
 package practice;
 
+import java.util.Objects;
+
 public class 蔵書 {
 	private int 蔵書ID;
-	private 書籍 書籍;
+	private 蔵書カテゴリ カテゴリ;
 	private 蔵書状態 状態;
 
-	public 蔵書(int 蔵書ID, 書籍 書籍, 蔵書状態 状態) {
+	public 蔵書(int 蔵書ID, 蔵書カテゴリ カテゴリ, 蔵書状態 状態) {
 		this.蔵書ID = 蔵書ID;
-		this.書籍 = 書籍;
+		this.カテゴリ = カテゴリ;
 		this.状態 = 状態;
+	}
+
+	public int 蔵書ID() {
+		return 蔵書ID;
 	}
 
 	public boolean is貸出中() {
@@ -19,20 +25,30 @@ public class 蔵書 {
 		this.状態 = 状態;
 	}
 
-	public カテゴリ getカテゴリ() {
-		return this.書籍.getカテゴリ();
+	public boolean 同じカテゴリ(蔵書カテゴリ カテゴリ) {
+		return this.カテゴリ == カテゴリ;
 	}
 
 	@Override
 	public String toString() {
-		return "蔵書{" +
-				"蔵書ID=" + 蔵書ID +
-				", 書籍=" + 書籍 +
-				", 状態=" + 状態 +
-				'}';
+		return "蔵書 [蔵書ID=" + 蔵書ID + ", カテゴリ=" + カテゴリ + ", 状態=" + 状態 + "]";
 	}
 
-	public practice.書籍 get書籍() {
-		return this.書籍;
+	@Override
+	public int hashCode() {
+		return Objects.hash(カテゴリ, 状態, 蔵書ID);
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		蔵書 other = (蔵書) obj;
+		return 蔵書ID == other.蔵書ID;
+	}
+
 }

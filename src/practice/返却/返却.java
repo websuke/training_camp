@@ -3,12 +3,14 @@ package practice.返却;
 import practice.蔵書;
 import practice.蔵書状態;
 import practice.予約.予約リスト;
+import practice.貸出.貸出リスト;
 
 public class 返却 {
 
 	public 判定結果 返却する(蔵書 蔵書, 返却ワゴン 返却ワゴン) {
 
 		if (蔵書.is貸出中()) {
+			貸出リスト.返却する(蔵書.蔵書ID());
 			蔵書.set状態(蔵書状態.返却済);
 		}
 
@@ -20,6 +22,6 @@ public class 返却 {
 	}
 
 	private boolean isCorrect(蔵書 蔵書, 返却ワゴン 返却ワゴン) {
-		return 蔵書.getカテゴリ() == 返却ワゴン.getカテゴリ();
+		return 返却ワゴン.同じカテゴリ(蔵書);
 	}
 }
